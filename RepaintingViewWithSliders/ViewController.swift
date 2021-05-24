@@ -29,49 +29,48 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         repaintingView.layer.cornerRadius = 10
     }
-    func startValueForSliders() {
+    
+    @IBAction func dragSliders(_ sender: Any) {
+        assignmentColor()
+        assigmentColorCountToLabel()
+    }
+    private func startValueForSliders() {
         redColorSlider.value = 0
         redColorSlider.minimumTrackTintColor = .red
         greenColorSlider.value = 0
         greenColorSlider.minimumTrackTintColor = .green
         blueColorSlider.value = 0
-        blueColorSlider.minimumTrackTintColor = .blue
+        
     }
-    func calculationColor() ->UIColor {
+    private func calculationColor() ->UIColor {
         
         let red : CGFloat
         let green : CGFloat
         let blue : CGFloat
-        let colorCount: Float = 255.0
-        let percent : Float = 100.0
         
-        red = CGFloat(redColorSlider.value * percent / colorCount  )
-        green = CGFloat(greenColorSlider.value * percent / colorCount )
-        blue = CGFloat(blueColorSlider.value * percent / colorCount)
+        red = CGFloat(redColorSlider.value)
+        green = CGFloat(greenColorSlider.value)
+        blue = CGFloat(blueColorSlider.value)
         
         let color = UIColor(red: red, green: green, blue: blue, alpha: 0.8)
         
         return color
     }
-    func assignmentColor() {
+    
+    private func assignmentColor() {
         let color = calculationColor()
         repaintingView.backgroundColor = color
     }
-    func assigmentColorCountToLabel() {
-        let red  = redColorSlider.value
-        let green = greenColorSlider.value
-        let blue = blueColorSlider.value
-        
-        //        преобразование в три символа для лейбла с подсчетом цвета
-        redColorCountLabel.text = String(format: "%.2f", red)
-        greenColorCountLabel.text = String(format: "%.2f", green)
-        blueColorCountLabel.text = String(format: "%.2f", blue)
-    }
-    @IBAction func dragSliders(_ sender: Any) {
-        assignmentColor()
-        assigmentColorCountToLabel()
-    }
     
+    private func assigmentColorCountToLabel() {
+        //        преобразование в три символа для лейбла с подсчетом цвета
+        redColorCountLabel.text = transformationToString(valueFrom: redColorSlider)
+        greenColorCountLabel.text = transformationToString(valueFrom: greenColorSlider)
+        blueColorCountLabel.text = transformationToString(valueFrom: blueColorSlider)
+    }
+    private func transformationToString(valueFrom slider: UISlider) -> String {
+        return String(format: "%.2f", slider.value)
+    }
     
 }
 
