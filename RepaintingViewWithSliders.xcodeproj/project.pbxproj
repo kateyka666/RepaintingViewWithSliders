@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79A2A32B266969FD00AD2FFE /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2A32A266969FD00AD2FFE /* StartVC.swift */; };
+		79A2A32D26696FE100AD2FFE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2A32C26696FE000AD2FFE /* Color.swift */; };
 		79D56159265862B00048C061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D56158265862B00048C061 /* AppDelegate.swift */; };
 		79D5615B265862B00048C061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D5615A265862B00048C061 /* SceneDelegate.swift */; };
-		79D5615D265862B00048C061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D5615C265862B00048C061 /* ViewController.swift */; };
+		79D5615D265862B00048C061 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D5615C265862B00048C061 /* SettingsVC.swift */; };
 		79D56160265862B00048C061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D5615E265862B00048C061 /* Main.storyboard */; };
 		79D56162265862B60048C061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D56161265862B60048C061 /* Assets.xcassets */; };
 		79D56165265862B60048C061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D56163265862B60048C061 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79A2A32A266969FD00AD2FFE /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		79A2A32C26696FE000AD2FFE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		79D56155265862B00048C061 /* RepaintingViewWithSliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepaintingViewWithSliders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D56158265862B00048C061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D5615A265862B00048C061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79D5615C265862B00048C061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79D5615C265862B00048C061 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		79D5615F265862B00048C061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79D56161265862B60048C061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79D56164265862B60048C061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				79D56158265862B00048C061 /* AppDelegate.swift */,
 				79D5615A265862B00048C061 /* SceneDelegate.swift */,
-				79D5615C265862B00048C061 /* ViewController.swift */,
+				79A2A32A266969FD00AD2FFE /* StartVC.swift */,
+				79D5615C265862B00048C061 /* SettingsVC.swift */,
+				79A2A32C26696FE000AD2FFE /* Color.swift */,
 				79D5615E265862B00048C061 /* Main.storyboard */,
 				79D56161265862B60048C061 /* Assets.xcassets */,
 				79D56163265862B60048C061 /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D5615D265862B00048C061 /* ViewController.swift in Sources */,
+				79D5615D265862B00048C061 /* SettingsVC.swift in Sources */,
 				79D56159265862B00048C061 /* AppDelegate.swift in Sources */,
 				79D5615B265862B00048C061 /* SceneDelegate.swift in Sources */,
+				79A2A32D26696FE100AD2FFE /* Color.swift in Sources */,
+				79A2A32B266969FD00AD2FFE /* StartVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
