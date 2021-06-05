@@ -164,7 +164,6 @@ extension SettingsVC : UITextFieldDelegate {
     private func addDoneButtonOnKeyboard() -> Bool {
         let doneToolbar: UIToolbar = UIToolbar()
         doneToolbar.barStyle = UIBarStyle.black
-        
         let placeFromLeading = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                                target: nil,
                                                action: nil)
@@ -172,7 +171,6 @@ extension SettingsVC : UITextFieldDelegate {
                                                     style: .done,
                                                     target: nil,
                                                     action: #selector(donePressed))
-    
         doneToolbar.setItems([placeFromLeading, done], animated: true)
         doneToolbar.isUserInteractionEnabled = true
         doneToolbar.sizeToFit()
