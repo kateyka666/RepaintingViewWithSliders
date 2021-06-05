@@ -41,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79B072D5266B9D2E001CCD1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79A2A32C26696FE000AD2FFE /* Color.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79B072D6266B9D44001CCD1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79D5615C265862B00048C061 /* SettingsVC.swift */,
+				79A2A32A266969FD00AD2FFE /* StartVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		79B072D7266B9D64001CCD1E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				79D56163265862B60048C061 /* LaunchScreen.storyboard */,
+				79D5615E265862B00048C061 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		79B072D8266B9D82001CCD1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79D56161265862B60048C061 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79B072D9266B9DFF001CCD1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79D56158265862B00048C061 /* AppDelegate.swift */,
+				79D5615A265862B00048C061 /* SceneDelegate.swift */,
+				79D56166265862B60048C061 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		79D5614C265862B00048C061 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +104,11 @@
 		79D56157265862B00048C061 /* RepaintingViewWithSliders */ = {
 			isa = PBXGroup;
 			children = (
-				79D56158265862B00048C061 /* AppDelegate.swift */,
-				79D5615A265862B00048C061 /* SceneDelegate.swift */,
-				79A2A32A266969FD00AD2FFE /* StartVC.swift */,
-				79D5615C265862B00048C061 /* SettingsVC.swift */,
-				79A2A32C26696FE000AD2FFE /* Color.swift */,
-				79D5615E265862B00048C061 /* Main.storyboard */,
-				79D56161265862B60048C061 /* Assets.xcassets */,
-				79D56163265862B60048C061 /* LaunchScreen.storyboard */,
-				79D56166265862B60048C061 /* Info.plist */,
+				79B072D7266B9D64001CCD1E /* Storyboards */,
+				79B072D6266B9D44001CCD1E /* Controllers */,
+				79B072D5266B9D2E001CCD1E /* Model */,
+				79B072D9266B9DFF001CCD1E /* Supporting Files */,
+				79B072D8266B9D82001CCD1E /* Resources */,
 			);
 			path = RepaintingViewWithSliders;
 			sourceTree = "<group>";
@@ -296,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96UHXBP52X;
-				INFOPLIST_FILE = RepaintingViewWithSliders/Info.plist;
+				INFOPLIST_FILE = "RepaintingViewWithSliders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96UHXBP52X;
-				INFOPLIST_FILE = RepaintingViewWithSliders/Info.plist;
+				INFOPLIST_FILE = "RepaintingViewWithSliders/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

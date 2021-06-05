@@ -178,16 +178,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uc0-W5-EUO"/>
                     <connections>
-                        <outlet property="blueColorCountLabel" destination="6vh-cr-Rxq" id="8mc-71-vJM"/>
                         <outlet property="blueColorSlider" destination="rPy-qU-Qhk" id="EEv-lY-xu7"/>
                         <outlet property="blueTextField" destination="FFo-Y5-DUR" id="7Oe-eU-1sR"/>
-                        <outlet property="greenColorCountLabel" destination="hhb-B7-uA8" id="Pfx-jJ-kCe"/>
                         <outlet property="greenColorSlider" destination="78B-xv-73k" id="imN-Nd-1iI"/>
                         <outlet property="greenTextField" destination="DD8-rw-tFc" id="cyG-TY-iy1"/>
-                        <outlet property="redColorCountLabel" destination="jlY-jf-cH0" id="0Mi-mz-fhg"/>
                         <outlet property="redColorSlider" destination="ZdP-Rt-XfM" id="Cig-lm-Pdn"/>
                         <outlet property="redTextField" destination="ImV-so-zL4" id="8gN-cm-fLm"/>
                         <outlet property="repaintingView" destination="iVN-ZR-S1v" id="RPT-di-ng0"/>
+                        <outletCollection property="sliders" destination="ZdP-Rt-XfM" collectionClass="NSMutableArray" id="Mwb-lc-kMq"/>
+                        <outletCollection property="sliders" destination="78B-xv-73k" collectionClass="NSMutableArray" id="vJC-MU-rKW"/>
+                        <outletCollection property="sliders" destination="rPy-qU-Qhk" collectionClass="NSMutableArray" id="EFq-wS-S9O"/>
+                        <outletCollection property="colorCountLabels" destination="jlY-jf-cH0" collectionClass="NSMutableArray" id="nKD-FL-ZLj"/>
+                        <outletCollection property="colorCountLabels" destination="hhb-B7-uA8" collectionClass="NSMutableArray" id="BGL-d7-wlZ"/>
+                        <outletCollection property="colorCountLabels" destination="6vh-cr-Rxq" collectionClass="NSMutableArray" id="WBf-Fe-H7d"/>
+                        <outletCollection property="textFields" destination="ImV-so-zL4" collectionClass="NSMutableArray" id="dbW-Fq-PSu"/>
+                        <outletCollection property="textFields" destination="DD8-rw-tFc" collectionClass="NSMutableArray" id="AnW-LK-ghe"/>
+                        <outletCollection property="textFields" destination="FFo-Y5-DUR" collectionClass="NSMutableArray" id="L41-vG-jrR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2V-qj-O33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
