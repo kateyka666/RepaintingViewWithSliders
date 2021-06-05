@@ -23,13 +23,15 @@ class StartVC: UIViewController {
         super.viewWillAppear(animated)
         setupUIView()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let settingsVC = segue.destination as? SettingsVC else { return }
-        settingsVC.mainColor = mainColor
-        settingsVC.delegate = self
-    }
+
     @IBAction func goToSettingsVCItem(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "SettingsVC", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let settingsVC = storyboard.instantiateViewController(withIdentifier: "SettingsVC") as? SettingsVC{
+            settingsVC.mainColor = mainColor
+            settingsVC.delegate = self
+            navigationController?.pushViewController(settingsVC, animated: true)
+        }
+        
     }
     private func setupUIView() {
         startView.backgroundColor = UIColor(red: CGFloat(mainColor.redColor), green: CGFloat(mainColor.greenColor), blue: CGFloat(mainColor.blueColor), alpha: CGFloat(mainColor.alpha))

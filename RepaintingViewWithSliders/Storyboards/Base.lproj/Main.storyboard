@@ -23,7 +23,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="gLU-AF-oq8">
                             <connections>
                                 <action selector="goToSettingsVCItem:" destination="15N-aD-Pio" id="3Xg-F5-ku4"/>
-                                <segue destination="7ry-EG-62U" kind="show" identifier="SettingsVC" id="tMK-Lr-sGg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -44,14 +43,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVN-ZR-S1v">
-                                <rect key="frame" x="51" y="74" width="218" height="109"/>
+                                <rect key="frame" x="51" y="30" width="218" height="109"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iVN-ZR-S1v" secondAttribute="height" multiplier="2:1" id="RFC-tn-9F4"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E84-TZ-rvi">
-                                <rect key="frame" x="10" y="213" width="300" height="140"/>
+                                <rect key="frame" x="10" y="169" width="300" height="140"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="G5w-V5-h5B">
                                         <rect key="frame" x="0.0" y="14" width="52" height="111.5"/>
@@ -154,7 +153,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31R-pq-IrO">
-                                <rect key="frame" x="131" y="378" width="58" height="35"/>
+                                <rect key="frame" x="131" y="334" width="58" height="35"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <state key="normal" title="DONE"/>
                                 <connections>
