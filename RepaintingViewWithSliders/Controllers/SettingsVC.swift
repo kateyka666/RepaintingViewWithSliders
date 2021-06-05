@@ -73,7 +73,7 @@ class SettingsVC: UIViewController {
 
 extension SettingsVC {
     private func dissmissBackButtonItem() {
-        navigationController?.isNavigationBarHidden = true
+        navigationItem.hidesBackButton = true
     }
     
     private func startValueForSliders() {
