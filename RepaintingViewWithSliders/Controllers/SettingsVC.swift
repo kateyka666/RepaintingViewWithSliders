@@ -39,6 +39,7 @@ class SettingsVC: UIViewController {
         setupTexFields()
         dissmissBackButtonItem()
         addDoneButtonOnKeyboard()
+        hideKeyboardByUserTap()
     }
     
     override func viewWillLayoutSubviews() {
@@ -53,6 +54,7 @@ class SettingsVC: UIViewController {
         assignmentColor()
         assigmentColorCountToLabel()
         assigmentTextField()
+        hideKeyboardByUserTap()
     }
     
     @IBAction func dragSliders(_ sender: Any) {
@@ -71,7 +73,7 @@ class SettingsVC: UIViewController {
 
 extension SettingsVC {
     private func dissmissBackButtonItem() {
-        navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
     }
     
     private func startValueForSliders() {
@@ -132,6 +134,14 @@ extension SettingsVC {
     
     private func transformationToString(valueFrom slider: UISlider) -> String {
         return String(format: "%.2f", slider.value)
+    }
+    private func hideKeyboardByUserTap() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(tapOnView))
+        gesture.numberOfTapsRequired = 1
+        view.addGestureRecognizer(gesture)
+    }
+    @objc private func tapOnView(gesture:UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
 
